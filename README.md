@@ -4,8 +4,8 @@ Project Overview -
 
 Team name: Group 5
 
-Project manager: David Boatright
-OSINT specialist: Juan Gamez
-Risk analysis: Halena Aquino-Dunkin
-Developer: Lahari Paidipati
-Documentation lead: Rasagyna Peddapalli
+- Project manager: David Boatright
+- OSINT specialist: Juan Gamez
+- Risk analysis: Halena Aquino-Dunkin
+- Developer: Lahari Paidipati
+- Documentation lead: Rasagyna Peddapalli
