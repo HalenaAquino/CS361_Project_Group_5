@@ -6,6 +6,8 @@ OSINT Specialist: Juan Gamez
 
 Risk Analysis: Halena Aquino-Dunkin
 
-Developer: Lahari Paidipati
+Back-end Developer: Rohith Belede
+
+Front-end Developer: Lahari Padipati
 
 Documentation Lead: Rasagyna Peddapalli
