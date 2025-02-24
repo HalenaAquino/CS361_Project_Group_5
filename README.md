@@ -7,5 +7,5 @@ Team name: Group 5
 - Project manager: David Boatright
 - OSINT specialist: Juan Gamez
 - Risk analysis: Halena Aquino-Dunkin
-- Developer: Lahari Paidipati
+- Developer: Lahari Paidipati and Rohith Belede
 - Documentation lead: Rasagyna Peddapalli
