@@ -31,7 +31,6 @@ def fetch_virus_total_data(api_key, ip_address):
     else:
         return {"error": f"Failed to fetch data, status code: {response.status_code}"}
 
-# Example usage
 SHODAN_API_KEY = "your_shodan_api_key"
 IPINFO_API_KEY = "4acd9b2bc76c26"
 VT_API_KEY = "cef813e5aaab3072239ebb5dc17e0a8ae2e6ad0c1f56137cc70bc9fce7a22109"
