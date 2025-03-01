@@ -1,6 +1,6 @@
-OSINT API RESEARCH REPORT
+__OSINT API RESEARCH REPORT__
 
-SHODAN API
+**SHODAN API**
 
 Shodan is an advanced search engine that provides insights into internet-connected devices, including their open ports, security risks, and vulnerabilities. It is widely used in cybersecurity to monitor potential threats, assess exposed services, and evaluate security risks for both individuals and organizations.
 
@@ -37,7 +37,7 @@ Use Case:
 •	Conduct survey for cybersecurity research and ethical hacking purposes.
 
 
-IPINFO API
+**IPINFO API**
 
 IPinfo is an IP intelligence service that provides detailed data on networks, ISPs, and geolocation. It is commonly used in cybersecurity for network forensics, fraud detection, and threat intelligence monitoring.
 
@@ -72,7 +72,7 @@ Use Case:
 •	Assist in fraud detection and risk assessment in financial transactions.
 
 
-VIRUSTOTAL API
+**VIRUSTOTAL API**
 
 VirusTotal is a threat intelligence platform that aggregates data from multiple antivirus engines and security companies to provide malware research and cybersecurity insights. It helps identify malicious files, URLs, and IP addresses.
 
@@ -107,7 +107,7 @@ Use Case:
 •	Utilize multiple security vendor's insights to make informed cybersecurity decisions.
 
 
-COMPARISON AND CONCLUSION:
+**COMPARISON AND CONCLUSION:**
 
 Each of these APIs plays a crucial role in the realm of OSINT and cybersecurity:
 
