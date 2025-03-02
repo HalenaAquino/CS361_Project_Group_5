@@ -26,4 +26,3 @@ const ThreatDashboard = () => {
 };
 
 export default ThreatDashboard;
-
