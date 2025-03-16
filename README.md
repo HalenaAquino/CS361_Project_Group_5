@@ -1,3 +1,17 @@
+# TODO
+
+Week 3 Tasks - 
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | Rasagyna | COMPLETED |
+| Task 2 | Halena | COMPLETED |
+| Task 3 | Lahari | COMPLETED |
+| Task 4 | Rohith | PENDING |
+| Task 5 | Juan | PENDING |
+
+
+
 # CS361_Project_Group_5
 
 Project Overview - 
