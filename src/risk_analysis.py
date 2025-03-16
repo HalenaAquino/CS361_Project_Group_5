@@ -23,8 +23,22 @@ def refine_risk_score(threat, likelihood, impact):
         return calculate_risk(likelihood, impact)  
 
 threats = [
-    {"threat": "SQL Injection", "likelihood": random.randint(1, 5), "impact": random.randint(1, 5)},
-    {"threat": "Phishing Attack", "likelihood": random.randint(1, 5), "impact": random.randint(1, 5)},
+    {"threat": "DDoS Attack", "likelihood": 4, "impact": 2},
+    {"threat": "Lack of employee IS education", "likelihood": 3, "impact": 4},
+    {"threat": "Physical breach", "likelihood": 1, "impact": 5},
+    {"threat": "SQL Injection", "likelihood": 4, "impact": 5},
+    {"threat": "Insecurely stored passwords", "likelihood": 3, "impact": 4},
+    {"threat": "Lack of MFA", "likelihood": 3, "impact": 4},
+    {"threat": "Lack of backups", "likelihood": 2, "impact": 4},
+    {"threat": "E-commerce platform going down", "likelihood": 3, "impact": 3},
+    {"threat": "Employee mistakes or lack of training", "likelihood": 3, "impact": 3},
+    {"threat": "Payment processing going down", "likelihood": 3, "impact": 3},
+    {"threat": "Excessive privileges", "likelihood": 4, "impact": 5},
+    {"threat": "Weak encryption of customer records", "likelihood": 3, "impact": 3},
+    {"threat": "Outdated firmware", "likelihood": 3, "impact": 4},
+    {"threat": "Website defacement", "likelihood": 3, "impact": 1},
+    {"threat": "Data leak", "likelihood": 3, "impact": 4},
+    {"threat": "Man in the Middle Attack", "likelihood": 2, "impact": 4},
 ]
 
 for threat in threats:
