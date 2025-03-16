@@ -7,7 +7,7 @@ Week 3 Tasks - Due 3/16 at 11:59pm
 | Task 1 | Rasagyna | COMPLETED |
 | Task 2 | Halena | COMPLETED |
 | Task 3 | Lahari | COMPLETED |
-| Task 4 | Rohith | PENDING |
+| Task 4 | Rohith | COMPLETED |
 | Task 5 | Juan | COMPLETED |
 
 
