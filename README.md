@@ -1,6 +1,6 @@
 # TODO
 
-Week 3 Tasks - 
+Week 3 Tasks - Due 3/16 at 11:59pm
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
