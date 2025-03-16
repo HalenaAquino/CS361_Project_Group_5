@@ -8,7 +8,7 @@ Week 3 Tasks - Due 3/16 at 11:59pm
 | Task 2 | Halena | COMPLETED |
 | Task 3 | Lahari | COMPLETED |
 | Task 4 | Rohith | PENDING |
-| Task 5 | Juan | PENDING |
+| Task 5 | Juan | COMPLETED |
 
 
 
