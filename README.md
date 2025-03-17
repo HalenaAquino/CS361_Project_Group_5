@@ -1,14 +1,14 @@
 # TODO
 
-Week 3 Tasks - Due 3/16 at 11:59pm
+Week 3 Tasks - Due 3/21 at 11:59pm
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
-| Task 1 | Rasagyna | COMPLETED |
-| Task 2 | Halena | COMPLETED |
-| Task 3 | Lahari | COMPLETED |
-| Task 4 | Rohith | COMPLETED |
-| Task 5 | Juan | COMPLETED |
+| Task 1 | Rohith | PENDING |
+| Task 2 | Rasagyna | PENDING |
+| Task 3 | ----- | PENDING |
+| Task 4 | Halena | PENDING |
+| Task 5 | ---- | PENDING |
 
 
 
