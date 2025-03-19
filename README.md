@@ -15,7 +15,7 @@ Week 5 Tasks - Due 3/23 at 11:59pm
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
-| Task 1 | Halena | PENDING |
+| Task 1 | Halena | COMPLETED |
 | Task 2 | Rasagyna | PENDING |
 | Task 3 | Rohith | PENDING |
 | Task 4 | ---- | PENDING |
