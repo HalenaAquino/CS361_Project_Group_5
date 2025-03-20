@@ -3,9 +3,14 @@ import React, { useState, useEffect } from "react";
 const ThreatDashboard = () => {
   const [assets, setAssets] = useState([]);
   const [threats, setThreats] = useState([]);
+  const [riskFilter, setRiskFilter] = useState(0);
 
   useEffect(() => {
-    // Simulated API call (Replace with actual API fetch)
+    fetchOSINTData();
+  }, []);
+
+  const fetchOSINTData = async () => {
+    // Simulating real-time OSINT API call
     setTimeout(() => {
       setAssets([
         { id: 1, name: "Web Server", category: "Hardware", description: "A physical server hosting the company website" },
@@ -43,78 +48,28 @@ const ThreatDashboard = () => {
         { id: 16, asset_id: 2, name: "Man-in-the-Middle Attack", vulnerability: "Intercepting communications", risk_score: 6 },
       ]);
     }, 1000);
-  }, []);
+  };
+
+  const filteredThreats = threats.filter(threat => threat.risk_score >= riskFilter);
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-2xl font-bold mb-4">Real-Time Threat Intelligence</h1>
+      
+      <div className="flex items-center mb-4">
+        <label className="mr-2 font-semibold">Filter by Risk Score:</label>
+        <input
+          type="number"
+          value={riskFilter}
+          onChange={(e) => setRiskFilter(Number(e.target.value))}
+          className="p-1 border rounded"
+        />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <AssetList assets={assets} />
-        <ThreatList threats={threats} />
+        <ThreatList threats={filteredThreats} />
       </div>
-    </div>
-  );
-};
-
-// Component to Display Asset Inventory
-const AssetList = ({ assets }) => {
-  return (
-    <div className="bg-white p-4 shadow rounded-lg">
-      <h2 className="text-xl font-semibold mb-2">Asset Inventory</h2>
-      <table className="w-full border-collapse border border-gray-300">
-        <thead>
-          <tr className="bg-gray-200">
-            <th className="border p-2">Name</th>
-            <th className="border p-2">Category</th>
-            <th className="border p-2">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {assets.length === 0 ? (
-            <tr><td colSpan="3" className="text-center p-2">Loading assets...</td></tr>
-          ) : (
-            assets.map((asset) => (
-              <tr key={asset.id} className="border-t">
-                <td className="border p-2">{asset.name}</td>
-                <td className="border p-2">{asset.category}</td>
-                <td className="border p-2">{asset.description}</td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      </table>
-    </div>
-  );
-};
-
-// Component to Display Threat-Vulnerability Mappings
-const ThreatList = ({ threats }) => {
-  return (
-    <div className="bg-white p-4 shadow rounded-lg">
-      <h2 className="text-xl font-semibold mb-2">Threat Intelligence Overview</h2>
-      <table className="w-full border-collapse border border-gray-300">
-        <thead>
-          <tr className="bg-gray-200">
-            <th className="border p-2">Threat</th>
-            <th className="border p-2">Vulnerability</th>
-            <th className="border p-2">Risk Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          {threats.length === 0 ? (
-            <tr><td colSpan="3" className="text-center p-2">Loading threats...</td></tr>
-          ) : (
-            threats.map((threat) => (
-              <tr key={threat.id} className="border-t">
-                <td className="border p-2">{threat.name}</td>
-                <td className="border p-2">{threat.vulnerability}</td>
-                <td className="border p-2">{threat.risk_score}</td>
-              </tr>
-            ))
-          )}
-        </tbody>
-      </table>
     </div>
   );
 };
