@@ -22,6 +22,6 @@ INSERT INTO tva_mapping (id, asset_id, threat_name, vulnerability_description, l
 (11, 9, "Excessive privileges for job", "An employee could have more access or privileges than is needed for their job, so if their account were to be accessed by an attacker, it would be more detrimental", 4, 4),
 (12, 6, "Weak encryption of customer records", "If customer records lacked the proper encryption, they would be easier for an attacker to steal", 3, 5),
 (13, 2, "Outdated firmware", "Outdated firmware would make the router more vulnerable to attacks", 4, 3),
-(14, 4, "Website defacement", "An attacker would deface the company's website, resulting in the business losing creditability", 2, 2),
+(14, 4, "Website defacement", "An attacker could deface the company's website, resulting in the business losing creditability", 2, 2),
 (15, 6, "Data leak", "Customer data could be leaked, making the company look bad, or possibly causing legal trouble", 3, 5),
 (16, 2, "Man in the Middle Attack", "An attacker could intercept and possibly alter communications between employees", 2, 5);
