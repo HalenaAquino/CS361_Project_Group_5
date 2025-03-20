@@ -1,7 +1,7 @@
 
 | Components | Choice |
 |-----------|---------|
-| Back-End | Django |
+| Back-End | Flask |
 | Front-End | React |
 | Database | MongoDB |
 | OSINT API | Shodan, VirusTotal |
