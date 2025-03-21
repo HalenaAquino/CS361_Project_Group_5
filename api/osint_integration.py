@@ -1,35 +1,32 @@
 import requests
-import psycopg2
+import mysql.connector
 import json
 import os
 
-SHODAN_API_KEY = os.getenv("SHODAN_API_KEY", "your_shodan_api_key")
-IPINFO_API_KEY = os.getenv("IPINFO_API_KEY", "your_ipinfo_api_key")
-VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY", "your_virustotal_api_key")
+SHODAN_API_KEY = os.getenv("SHODAN_API_KEY", "bJhmxTVyiypZZ4X2RllTguMwB9ooR2JJ")
+IPINFO_API_KEY = os.getenv("IPINFO_API_KEY", "4acd9b2bc76c26")
+VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY", "cef813e5aaab3072239ebb5dc17e0a8ae2e6ad0c1f56137cc70bc9fce7a22109")
 
+# Database connection parameters
 DB_CONFIG = {
-    "dbname": "threat_intel",
-    "user": "admin",
-    "password": "securepass",
     "host": "localhost",
-    "port": "5432",
+    "user": "root",
+    "password": "root",
+    "database": "threat_intel",
 }
 
 def store_data(source, ip, data):
-    """Store threat intelligence data in PostgreSQL."""
     try:
-        conn = psycopg2.connect(**DB_CONFIG)
+        conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor()
-        cursor.execute(
-            "INSERT INTO threat_data (source, ip_address, data) VALUES (%s, %s, %s)",
-            (source, ip, json.dumps(data)),
-        )
+        query = "INSERT INTO threat_data (source, ip_address, data) VALUES (%s, %s, %s)"
+        cursor.execute(query, (source, ip, json.dumps(data)))
         conn.commit()
         cursor.close()
         conn.close()
         print(f"Stored {source} data for IP: {ip}")
-    except Exception as e:
-        print(f"Database error: {e}")
+    except mysql.connector.Error as err:
+        print(f"MySQL error: {err}")
 
 def fetch_shodan_data(ip):
     url = f"https://api.shodan.io/shodan/host/{ip}?key={SHODAN_API_KEY}"
