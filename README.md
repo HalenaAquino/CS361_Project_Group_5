@@ -36,5 +36,7 @@ Team name: Group 5
 
 # API KEYS
 SHODAN_API_KEY = "bJhmxTVyiypZZ4X2RllTguMwB9ooR2JJ"
+
 IPINFO_API_KEY = "4acd9b2bc76c26"
+
 VT_API_KEY = "cef813e5aaab3072239ebb5dc17e0a8ae2e6ad0c1f56137cc70bc9fce7a22109"
