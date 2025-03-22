@@ -8,7 +8,7 @@ Week 4 Tasks - Due 3/21 at 11:59pm
 | Task 2 | Rasagyna | COMPLETED |
 | Task 3 | Juan | PENDING |
 | Task 4 | Halena | COMPLETED |
-| Task 5 | Lahari | PENDING |
+| Task 5 | Lahari | COMPLETED |
 
 
 Week 5 Tasks - Due 3/26 at 11:59pm  
