@@ -15,7 +15,7 @@ Week 6 Tasks - Due 4/5 at 11:59pm
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
 | Task 1 | Halena | PENDING |
-| Task 2 | ---- | PENDING |
+| Task 2 | Rasagyna | PENDING |
 | Task 3 | ---- | PENDING |
 | Task 4 | ---- | PENDING |
 | Task 5 | ---- | PENDING |
