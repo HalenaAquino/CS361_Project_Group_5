@@ -10,6 +10,16 @@ Week 5 Tasks - Due 4/1 at 11:59pm
 | Task 4 | Lahari | PENDING |
 | Task 5 | ---- | PENDING |
 
+Week 6 Tasks - Due 4/5 at 11:59pm  
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | Halena | PENDING |
+| Task 2 | ---- | PENDING |
+| Task 3 | ---- | PENDING |
+| Task 4 | ---- | PENDING |
+| Task 5 | ---- | PENDING |
+
 
 # CS361_Project_Group_5
 
