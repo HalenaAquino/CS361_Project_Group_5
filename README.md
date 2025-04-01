@@ -7,7 +7,7 @@ Week 5 Tasks - Due 4/1 at 11:59pm
 | Task 1 | Halena | COMPLETED |
 | Task 2 | Rasagyna | COMPLETED |
 | Task 3 | Rohith | COMPLETED |
-| Task 4 | Lahari | PENDING |
+| Task 4 | Lahari | COMPLETED |
 | Task 5 | ---- | PENDING |
 
 Week 6 Tasks - Due 4/5 at 11:59pm  
