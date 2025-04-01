@@ -17,7 +17,7 @@ Week 6 Tasks - Due 4/5 at 11:59pm
 | Task 1 | Halena | COMPLETED |
 | Task 2 | Rasagyna | COMPLETED |
 | Task 3 | Rohith | PENDING |
-| Task 4 | ---- | PENDING |
+| Task 4 | Lahari | PENDING |
 | Task 5 | ---- | PENDING |
 
 
