@@ -29,28 +29,30 @@ const ThreatDashboard = () => {
         { id: 14, name: "Backups", category: "Process", description: "Backup systems for disaster recovery" },
       ]);
 
-      setThreats([
-        { id: 1, asset_id: 1, name: "DDoS Attack", vulnerability: "Flooding server with requests", risk_score: 8 },
-        { id: 2, asset_id: 9, name: "Employee Phishing", vulnerability: "Accidental phishing attacks", risk_score: 7 },
-        { id: 3, asset_id: 1, name: "Physical Breach", vulnerability: "Physical break-in to the server room", risk_score: 5 },
-        { id: 4, asset_id: 3, name: "SQL Injection", vulnerability: "Malicious SQL code injection", risk_score: 9 },
-        { id: 5, asset_id: 8, name: "Weak Passwords", vulnerability: "Insecurely stored credentials", risk_score: 7 },
-        { id: 6, asset_id: 12, name: "No Multi-Factor Authentication", vulnerability: "Lack of account authentication (MFA)", risk_score: 6 },
-        { id: 7, asset_id: 14, name: "No Backups", vulnerability: "Lack of backups for company systems", risk_score: 5 },
-        { id: 8, asset_id: 3, name: "E-commerce Down", vulnerability: "Platform outage causes business losses", risk_score: 8 },
-        { id: 9, asset_id: 9, name: "Lack of Training", vulnerability: "Employees making mistakes in IT security", risk_score: 6 },
-        { id: 10, asset_id: 12, name: "Payment Platform Down", vulnerability: "Loss of transactions and credibility", risk_score: 8 },
-        { id: 11, asset_id: 9, name: "Excessive Privileges", vulnerability: "Employees having too many access rights", risk_score: 7 },
-        { id: 12, asset_id: 6, name: "Weak Encryption", vulnerability: "Customer records lacking encryption", risk_score: 6 },
-        { id: 13, asset_id: 2, name: "Outdated Firmware", vulnerability: "Old firmware increases router risk", risk_score: 6 },
-        { id: 14, asset_id: 4, name: "Website Defacement", vulnerability: "Hacking into CMS and altering content", risk_score: 5 },
-        { id: 15, asset_id: 6, name: "Data Leak", vulnerability: "Exposure of sensitive customer data", risk_score: 7 },
-        { id: 16, asset_id: 2, name: "Man-in-the-Middle Attack", vulnerability: "Intercepting communications", risk_score: 6 },
+    setThreats([
+        { id: 1, asset_id: 1, name: "DDoS Attack", vulnerability: "Flooding server with requests", risk_score: 16 },
+        { id: 2, asset_id: 9, name: "Employee Phishing", vulnerability: "Accidental phishing attacks", risk_score: 15 },
+        { id: 3, asset_id: 1, name: "Physical Breach", vulnerability: "Physical break-in to the server room", risk_score: 15 },
+        { id: 4, asset_id: 3, name: "SQL Injection", vulnerability: "Malicious SQL code injection", risk_score: 20 },
+        { id: 5, asset_id: 8, name: "Weak Passwords", vulnerability: "Insecurely stored credentials", risk_score: 20 },
+        { id: 6, asset_id: 12, name: "No Multi-Factor Authentication", vulnerability: "Lack of account authentication (MFA)", risk_score: 15 },
+        { id: 7, asset_id: 14, name: "No Backups", vulnerability: "Lack of backups for company systems", risk_score: 15 },
+        { id: 8, asset_id: 3, name: "E-commerce Down", vulnerability: "Platform outage causes business losses", risk_score: 12 },
+        { id: 9, asset_id: 9, name: "Lack of Training", vulnerability: "Employees making mistakes in IT security", risk_score: 10 },
+        { id: 10, asset_id: 12, name: "Payment Platform Down", vulnerability: "Loss of transactions and credibility", risk_score: 12 },
+        { id: 11, asset_id: 9, name: "Excessive Privileges", vulnerability: "Employees having too many access rights", risk_score: 16 },
+        { id: 12, asset_id: 6, name: "Weak Encryption", vulnerability: "Customer records lacking encryption", risk_score: 15 },
+        { id: 13, asset_id: 2, name: "Outdated Firmware", vulnerability: "Old firmware increases router risk", risk_score: 12 },
+        { id: 14, asset_id: 4, name: "Website Defacement", vulnerability: "Hacking into CMS and altering content", risk_score: 4 },
+        { id: 15, asset_id: 6, name: "Data Leak", vulnerability: "Exposure of sensitive customer data", risk_score: 15 },
+        { id: 16, asset_id: 2, name: "Man-in-the-Middle Attack", vulnerability: "Intercepting communications", risk_score: 10 },
       ]);
     }, 1000);
   };
 
-  const filteredThreats = threats.filter(threat => threat.risk_score >= riskFilter);
+  const filteredThreats = threats
+    .filter(threat => threat.risk_score >= riskFilter)
+    .sort((a, b) => b.risk_score - a.risk_score);
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
