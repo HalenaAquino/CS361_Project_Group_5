@@ -1,6 +1,6 @@
 # TODO
 
-Week 6 Tasks - Due 4/5 at 11:59pm  
+Week 6 Tasks - Due 4/5 at 11:59pm  -> SUBMITTED
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
