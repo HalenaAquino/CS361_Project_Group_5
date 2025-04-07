@@ -1,5 +1,15 @@
 # TODO
 
+Week 7 Tasks - Due 4/10 at 11:59pm
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | Rasagyna | PENDING |
+| Task 2 | Rohith | PENDING |
+| Task 3 | ------ | PENDING |
+| Task 4 | ------ | PENDING |
+| Task 5 | Halena | PENDING |
+
 Week 6 Tasks - Due 4/5 at 11:59pm  -> SUBMITTED
 
 | TASK | ASSIGNED TO | STATUS |
