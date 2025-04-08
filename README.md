@@ -6,7 +6,7 @@ Week 7 Tasks - Due 4/10 at 11:59pm
 |------|------------|--------|
 | Task 1 | Rasagyna | PENDING |
 | Task 2 | Rohith | PENDING |
-| Task 3 | ------ | PENDING |
+| Task 3 | Juan | PENDING |
 | Task 4 | ------ | PENDING |
 | Task 5 | Halena | PENDING |
 
