@@ -1,12 +1,21 @@
-    function About() {
-                                return (
-                                  <div>
-                                    <h1>About Us</h1>
-                                    <p>We are the ShopSmart Solutions cybersecurity team. Our job is to to protect their
-                                    digital assets by identifying, preventing, and responding to any and all cyber threats,
-                                    ensuring data security, and maintaining compliance with relevant regulations</p>
-                                  </div>
-                                );
-                              }
+import React from 'react';
+import './Home.css';
+import './Styles.css';
 
-                              export default About;
+function About() {
+  return (
+    <div className="about-container">
+      <div className="about-content">
+        <h1 className="about-heading">About Us</h1>
+        <p className="about-text">
+          Welcome to <strong>ShopSmart Solutions</strong>, your trusted cybersecurity partner.
+          Our mission is to protect your digital assets by identifying, preventing,
+          and responding to cyber threats. We ensure top-tier data security while
+          maintaining compliance with industry regulations.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default About;
