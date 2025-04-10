@@ -1,0 +1,137 @@
+/* General Container */
+.p-6 {
+  padding: 1.5rem;
+}
+
+/* Header */
+.text-4xl {
+  font-size: 2.25rem;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.text-gray-800 {
+  color: #2d3748;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-x-6 {
+  gap: 1.5rem;
+}
+
+/* Button Styling */
+button {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Default button background color (inactive state) */
+.bg-gray-300 {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+/* Active button background color */
+.bg-purple-600 {
+  background-color: #6b46c1;
+  color: white;
+}
+
+/* Input field styling */
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #6b46c1;
+  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.3);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+.md\:grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Card Styling for Asset List and Threat List */
+.bg-white {
+  background-color: #ffffff;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #f7fafc;
+}
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+th {
+  text-align: left;
+}
+td {
+  text-align: left;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+  background-color: #f7fafc;
+}
+
+/* Loading Text */
+.text-center {
+  text-align: center;
+}
+.p-4 {
+  padding: 1rem;
+}
+.text-gray-500 {
+  color: #6b7280;
+}
