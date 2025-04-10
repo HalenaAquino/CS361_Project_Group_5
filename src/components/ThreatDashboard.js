@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
+import './ThreatDashboard.css';
 
 const ThreatDashboard = () => {
   const [assets, setAssets] = useState([]);
   const [threats, setThreats] = useState([]);
   const [riskFilter, setRiskFilter] = useState(0);
+  const [showAssets, setShowAssets] = useState(null);  // Initially, neither is displayed
 
   useEffect(() => {
     fetchOSINTData();
   }, []);
 
   const fetchOSINTData = async () => {
-    // Simulating real-time OSINT API call
     setTimeout(() => {
       setAssets([
         { id: 1, name: "Web Server", category: "Hardware", description: "A physical server hosting the company website" },
@@ -50,51 +51,69 @@ const ThreatDashboard = () => {
     }, 1000);
   };
 
+
   const filteredThreats = threats
     .filter(threat => threat.risk_score >= riskFilter)
     .sort((a, b) => b.risk_score - a.risk_score);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold mb-4">Real-Time Threat Intelligence</h1>
-      
-      <div className="flex items-center mb-4">
-        <label className="mr-2 font-semibold">Filter by Risk Score:</label>
+    <div className="p-6 min-h-screen">
+      <h1 className="text-4xl font-extrabold text-gray-800 mb-6">Real-Time Threat Intelligence</h1>
+
+      <div className="flex items-center mb-6">
+        <label className="mr-4 text-lg font-semibold text-gray-700">Filter by Risk Score:</label>
         <input
           type="number"
           value={riskFilter}
           onChange={(e) => setRiskFilter(Number(e.target.value))}
-          className="p-1 border rounded"
+          className="p-2 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <AssetList assets={assets} />
-        <ThreatList threats={filteredThreats} />
+      <div className="flex justify-center mb-6 space-x-6">
+        <button
+          onClick={() => setShowAssets(true)}
+          className={`px-6 py-3 font-semibold rounded-lg ${showAssets === true ? "bg-purple-600 text-white" : "bg-gray-300"}`}
+        >
+          Asset Inventory
+        </button>
+        <button
+          onClick={() => setShowAssets(false)}
+          className={`px-6 py-3 font-semibold rounded-lg ${showAssets === false ? "bg-purple-600 text-white" : "bg-gray-300"}`}
+        >
+          Threat Intelligence
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Only render the selected content */}
+        {showAssets === true && <AssetList assets={assets} />}
+        {showAssets === false && <ThreatList threats={filteredThreats} />}
       </div>
     </div>
   );
 };
+
 const AssetList = ({ assets }) => (
-  <div className="bg-white p-4 shadow rounded-lg">
-    <h2 className="text-xl font-semibold mb-2">Asset Inventory</h2>
-    <table className="w-full border-collapse border border-gray-300">
+  <div className="bg-white p-6 shadow-lg rounded-lg overflow-hidden">
+    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Asset Inventory</h2>
+    <table className="w-full border-collapse text-gray-700">
       <thead>
         <tr className="bg-gray-200">
-          <th className="border p-2">Name</th>
-          <th className="border p-2">Category</th>
-          <th className="border p-2">Description</th>
+          <th className="border p-3 text-left">Name</th>
+          <th className="border p-3 text-left">Category</th>
+          <th className="border p-3 text-left">Description</th>
         </tr>
       </thead>
       <tbody>
         {assets.length === 0 ? (
-          <tr><td colSpan="3" className="text-center p-2">Loading assets...</td></tr>
+          <tr><td colSpan="3" className="text-center p-4 text-gray-500">Loading assets...</td></tr>
         ) : (
           assets.map(asset => (
-            <tr key={asset.id} className="border-t">
-              <td className="border p-2">{asset.name}</td>
-              <td className="border p-2">{asset.category}</td>
-              <td className="border p-2">{asset.description}</td>
+            <tr key={asset.id} className="border-t hover:bg-gray-50">
+              <td className="border p-3">{asset.name}</td>
+              <td className="border p-3">{asset.category}</td>
+              <td className="border p-3">{asset.description}</td>
             </tr>
           ))
         )}
@@ -104,25 +123,25 @@ const AssetList = ({ assets }) => (
 );
 
 const ThreatList = ({ threats }) => (
-  <div className="bg-white p-4 shadow rounded-lg">
-    <h2 className="text-xl font-semibold mb-2">Threat Intelligence Overview</h2>
-    <table className="w-full border-collapse border border-gray-300">
+  <div className="bg-white p-6 shadow-lg rounded-lg overflow-hidden">
+    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Threat Intelligence Overview</h2>
+    <table className="w-full border-collapse text-gray-700">
       <thead>
         <tr className="bg-gray-200">
-          <th className="border p-2">Threat</th>
-          <th className="border p-2">Vulnerability</th>
-          <th className="border p-2">Risk Score</th>
+          <th className="border p-3 text-left">Threat</th>
+          <th className="border p-3 text-left">Vulnerability</th>
+          <th className="border p-3 text-left">Risk Score</th>
         </tr>
       </thead>
       <tbody>
         {threats.length === 0 ? (
-          <tr><td colSpan="3" className="text-center p-2">No threats found...</td></tr>
+          <tr><td colSpan="3" className="text-center p-4 text-gray-500">No threats found...</td></tr>
         ) : (
           threats.map(threat => (
-            <tr key={threat.id} className="border-t">
-              <td className="border p-2">{threat.name}</td>
-              <td className="border p-2">{threat.vulnerability}</td>
-              <td className="border p-2">{threat.risk_score}</td>
+            <tr key={threat.id} className="border-t hover:bg-gray-50">
+              <td className="border p-3">{threat.name}</td>
+              <td className="border p-3">{threat.vulnerability}</td>
+              <td className="border p-3">{threat.risk_score}</td>
             </tr>
           ))
         )}
