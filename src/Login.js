@@ -1,57 +1,67 @@
-                              import { useState } from "react";
-                              import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import './Login.css';
+import './Styles.css';
 
-                              function Login() {
-                                const [username, setUsername] = useState("");
-                                const [password, setPassword] = useState("");
-                                const navigate = useNavigate();
+function Login() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-                                const handleLogin = (e) => {
-                                  e.preventDefault();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (username === "admin" && password === "ad123") {
+      alert("Login successful!");
+      navigate("/dashboard");
+    } else {
+      setError("Invalid credentials. Try again.");
+    }
+  };
 
-                                  // Dummy login validation
-                                  if (username === "admin" && password === "password") {
-                                    alert("Login successful!");
-                                    navigate("/dashboard"); // Redirect to Dashboard
-                                  } else {
-                                    alert("Invalid credentials. Try again.");
-                                  }
-                                };
+  return (
+    <div className="login-container">
+      {/* Top Section - Login Title */}
+      <h2 className="login-title">Login</h2>
 
-                                return (
-                                  <div className="flex flex-col items-center justify-center h-screen">
-                                    <h2 className="text-2xl font-bold mb-4">Login</h2>
-                                    <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleLogin}>
-                                      <div className="mb-4">
-                                        <label className="block text-gray-700 text-sm font-bold mb-2">Username</label>
-                                        <input
-                                          type="text"
-                                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
-                                          value={username}
-                                          onChange={(e) => setUsername(e.target.value)}
-                                          required
-                                        />
-                                      </div>
-                                      <div className="mb-6">
-                                        <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                                        <input
-                                          type="password"
-                                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
-                                          value={password}
-                                          onChange={(e) => setPassword(e.target.value)}
-                                          required
-                                        />
-                                      </div>
-                                      <button
-                                        type="submit"
-                                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                                      >
-                                        Login
-                                      </button>
-                                    </form>
-                                  </div>
-                                );
-                              }
+      {/* Middle Section - Login Form */}
+      <div className="login-box">
+        <form onSubmit={handleLogin}>
+          <div className="input-container">
+            <label>Username</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              placeholder="Enter your username"
+            />
+          </div>
 
-                              export default Login;
+          <div className="input-container">
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              placeholder="Enter your password"
+            />
+          </div>
+
+          {error && <div className="error-message">{error}</div>}
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      {/* Bottom Section - Customer Support */}
+      <div className="support-text">
+        Need help? <a href="#" className="support-link">Contact Support</a>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
 
