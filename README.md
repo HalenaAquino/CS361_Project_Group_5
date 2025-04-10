@@ -8,7 +8,7 @@ Week 7 (Fine-Tuning Risk Scoring, Threat Report Generation, and Security Audits)
 | Task 2 | Rohith | PENDING |
 | Task 3 | Juan | PENDING |
 | Task 4 | Lahari | PENDING |
-| Task 5 | Halena | PENDING |
+| Task 5 | Halena | COMPLETED |
 
 **Due 4/10 at 11:59pm**
 __________________________________________________________________________
