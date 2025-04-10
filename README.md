@@ -18,7 +18,7 @@ Week 7 (Fine-Tuning Risk Scoring, Threat Report Generation, and Security Audits)
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
 | Task 1 | Rasagyna | COMPLETED |
-| Task 2 | Rohith | PENDING |
+| Task 2 | Rohith | COMPLETED |
 | Task 3 | Juan | PENDING |
 | Task 4 | Lahari | COMPLETED |
 | Task 5 | Halena | COMPLETED |
