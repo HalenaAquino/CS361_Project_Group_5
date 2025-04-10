@@ -1,5 +1,18 @@
 # TODO
 
+Week 8 (Advanced Blue Teaming Features, AI-Powered Threat Hunting, and System Documentation)
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | ------ | COMPLETED |
+| Task 2 | Lahari | PENDING |
+| Task 3 | Halena | PENDING |
+| Task 4 | Rasagyna | PENDING |
+| Task 5 | ------ | COMPLETED |
+
+**Due 4/13 at 11:59pm**
+__________________________________________________________________________
+
 Week 7 (Fine-Tuning Risk Scoring, Threat Report Generation, and Security Audits)
 
 | TASK | ASSIGNED TO | STATUS |
