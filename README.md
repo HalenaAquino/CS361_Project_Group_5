@@ -19,11 +19,11 @@ Week 7 (Fine-Tuning Risk Scoring, Threat Report Generation, and Security Audits)
 |------|------------|--------|
 | Task 1 | Rasagyna | COMPLETED |
 | Task 2 | Rohith | COMPLETED |
-| Task 3 | Juan | PENDING |
+| Task 3 | Juan | COMPLETED |
 | Task 4 | Lahari | COMPLETED |
 | Task 5 | Halena | COMPLETED |
 
-**Due 4/10 at 11:59pm**
+**Due 4/10 at 11:59pm  -> SUBMITTED**
 __________________________________________________________________________
 
 Week 6 (Real-Time Risk Alerts, Incident Response, and Cost-Benefit Analysis for Risk Treatment)
