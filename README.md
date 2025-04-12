@@ -6,7 +6,7 @@ Week 8 (Advanced Blue Teaming Features, AI-Powered Threat Hunting, and System Do
 |------|------------|--------|
 | Task 1 | Rohith | COMPLETED |
 | Task 2 | Lahari | PENDING |
-| Task 3 | Halena | PENDING |
+| Task 3 | Halena | COMPLETED |
 | Task 4 | Rasagyna | PENDING |
 | Task 5 | ------ | PENDING |
 
