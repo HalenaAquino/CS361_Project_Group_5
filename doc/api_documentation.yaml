@@ -1,18 +1,43 @@
 openapi: 3.0.0
 info:
   title: Threat Intelligence API
-  description: API for accessing real-time threat data
   version: 1.0.0
+  description: Public API for retrieving and analyzing threat intelligence data
+
 paths:
   /threats:
     get:
-      summary: Retrieve all detected threats
+      summary: Retrieve all stored threats
       responses:
         '200':
-          description: Successful response
+          description: A list of threats
           content:
             application/json:
               example:
                 - id: 1
-                  type: "SQL Injection"
-                  risk_score: 25
+                  source: "Shodan"
+                  ip: "8.8.8.8"
+                  data: {...}
+                  timestamp: "2025-04-10T12:00:00Z"
+
+  /analyze:
+    post:
+      summary: Analyze a threat using AI
+      requestBody:
+        required: true
+        content:
+          application/json:
+            example:
+              threat: "SQL Injection"
+              likelihood: 4
+              impact: 5
+      responses:
+        '200':
+          description: AI risk assessment
+          content:
+            application/json:
+              example:
+                threat: "SQL Injection"
+                likelihood: 4
+                impact: 5
+                ai_assessment: "High risk due to high likelihood and impact."
