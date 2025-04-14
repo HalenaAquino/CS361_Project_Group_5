@@ -7,10 +7,10 @@ Week 8 (Advanced Blue Teaming Features, AI-Powered Threat Hunting, and System Do
 | Task 1 | Rohith | COMPLETED |
 | Task 2 | Lahari | COMPLETED |
 | Task 3 | Halena | COMPLETED |
-| Task 4 | Rasagyna | PENDING |
+| Task 4 | Rasagyna | COMPLETED |
 | Task 5 | Juan | COMPLETED |
 
-**Due 4/13 at 11:59pm**
+**Due 4/13 at 11:59pm  -> SUBMITTED**
 __________________________________________________________________________
 
 Week 7 (Fine-Tuning Risk Scoring, Threat Report Generation, and Security Audits)
