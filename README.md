@@ -1,5 +1,18 @@
 # TODO
 
+Week 9 (Final System Testing, Security Validation, and Performance Optimization)
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | ------ | PENDING |
+| Task 2 | ------ | PENDING |
+| Task 3 | ------ | PENDING |
+| Task 4 | ------ | PENDING |
+| Task 5 | Halena | PENDING |
+
+**Due 4/20 at 11:59pm**
+__________________________________________________________________________
+
 Week 8 (Advanced Blue Teaming Features, AI-Powered Threat Hunting, and System Documentation)
 
 | TASK | ASSIGNED TO | STATUS |
