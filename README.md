@@ -8,7 +8,7 @@ Week 9 (Final System Testing, Security Validation, and Performance Optimization)
 | Task 2 | ------ | PENDING |
 | Task 3 | ------ | PENDING |
 | Task 4 | ------ | PENDING |
-| Task 5 | Halena | PENDING |
+| Task 5 | Halena | COMPLETED |
 
 **Due 4/23 at 11:59pm**
 __________________________________________________________________________
