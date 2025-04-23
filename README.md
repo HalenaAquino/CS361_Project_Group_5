@@ -4,7 +4,7 @@ Week 9 (Final System Testing, Security Validation, and Performance Optimization)
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
-| Task 1 | ------ | PENDING |
+| Task 1 | Rasagyna | PENDING |
 | Task 2 | ------ | PENDING |
 | Task 3 | ------ | PENDING |
 | Task 4 | ------ | PENDING |
