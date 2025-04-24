@@ -26,12 +26,18 @@ Target Areas: Authentication, input validation, session management
 
 2.Vulnerabilities & Security Flaws
 
-Tool	Vulnerability	Description	Severity	NIST Reference	Remediation Step
-OWASP ZAP	Missing Content-Security-Policy	No CSP header detected; leaves app vulnerable to XSS attacks	High	AC-17, SC-18	Implement strict CSP headers
-OWASP ZAP	Secure flag not set on cookies	Session cookies are transmitted without Secure flag	Medium	SC-12, SC-23	Set Secure and HttpOnly flags on cookies
-Burp Suite	Input reflected in response (potential XSS)	Unescaped input reflected directly in HTML response	High	SI-10, SC-28	Apply proper input sanitization and output encoding
-Nmap	Port 22 open (SSH)	Open to all; may be a vector for brute-force attacks	Medium	AC-4, CM-7	Restrict access via firewall or fail2ban
-Nmap	HTTP server reveals version	Apache/2.4.41 found; known vulnerabilities exist for this version	High	CM-6, RA-5	Update server to latest version and disable version banner
+| Tool         | Vulnerability                             | Description                                                                 | Severity | NIST Reference       | Remediation Step                                           |
+|--------------|-------------------------------------------|-----------------------------------------------------------------------------|----------|----------------------|------------------------------------------------------------|
+| OWASP ZAP    | Missing Content-Security-Policy           | No CSP header detected; leaves app vulnerable to XSS attacks                | High     | AC-17, SC-18         | Implement strict CSP headers                               |
+| OWASP ZAP    | Secure flag not set on cookies            | Session cookies are transmitted without Secure flag                         | Medium   | SC-12, SC-23         | Set Secure and HttpOnly flags on cookies                   |
+| Burp Suite   | Input reflected in response (XSS)         | Unescaped input reflected directly in HTML response                         | High     | SI-10, SC-28         | Apply proper input sanitization and output encoding        |
+| Nmap         | Port 22 open (SSH)                        | Open to all; may be a vector for brute-force attacks                        | Medium   | AC-4, CM-7           | Restrict access via firewall or fail2ban                   |
+| Nmap         | HTTP server reveals version               | Apache/2.4.41 found; known vulnerabilities exist for this version           | High     | CM-6, RA-5           | Update server to latest version and disable version banner |
+| OWASP ZAP    | Unescaped user inputs in dashboard filter | React input fields were not escaped or sanitized, exposing to potential XSS | High     | SC-18, SI-10         | Escaped and sanitized React input fields                   |
+| Nmap         | Public exposure of MySQL (port 3306)      | MySQL service was externally accessible, increasing risk of data exposure   | High     | AC-4, CM-7, SC-7     | Closed external access via firewall configuration          |
+| Burp Suite   | Hardcoded admin credentials in `Login.js` | Hardcoded credentials pose serious security and credential reuse risks      | High     | IA-5, SA-3           | Replaced with environment-based login auth module          |
+| Manual Audit | XSS via unfiltered search parameter       | Search input allowed unfiltered HTML/JS, enabling cross-site scripting      | High     | SI-10, SC-18         | Added frontend + backend sanitization layer                |
+
 
 3.Compliance with NIST Standards
 
