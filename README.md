@@ -4,7 +4,7 @@ Week 9 (Final System Testing, Security Validation, and Performance Optimization)
 
 | TASK | ASSIGNED TO | STATUS |
 |------|------------|--------|
-| Task 1 | Rasagyna | PENDING |
+| Task 1 | Rasagyna | COMPLETED |
 | Task 2 | Juan | COMPLETED |
 | Task 3 | Halena | COMPLETED |
 | Task 4 | Halena | COMPLETED |
