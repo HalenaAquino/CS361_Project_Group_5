@@ -10,7 +10,7 @@ Week 9 (Final System Testing, Security Validation, and Performance Optimization)
 | Task 4 | Halena | COMPLETED |
 | Task 5 | Halena | COMPLETED |
 
-**Due 4/23 at 11:59pm**
+**Due 4/23 at 11:59pm  -> SUBMITTED**
 __________________________________________________________________________
 
 Week 8 (Advanced Blue Teaming Features, AI-Powered Threat Hunting, and System Documentation)
