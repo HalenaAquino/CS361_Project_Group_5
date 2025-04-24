@@ -1,0 +1,3 @@
+-- No database queries present at this time.
+-- Application currently renders static HTML only.
+-- Optimization not required.
