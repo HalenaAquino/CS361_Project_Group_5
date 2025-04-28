@@ -1,5 +1,17 @@
 # TODO
 
+Week 10 (Final Report Submission, System Demonstration, and Presentation Preparation)
+
+| TASK | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| Task 1 | Halena | COMPLETED |
+| Task 2 | All | COMPLETED |
+| Task 3 | Halena | COMPLETED |
+| Task 4 | All | COMPLETED |
+
+**Due 4/27 at 11:59pm  -> SUBMITTED**
+__________________________________________________________________________
+
 Week 9 (Final System Testing, Security Validation, and Performance Optimization)
 
 | TASK | ASSIGNED TO | STATUS |
