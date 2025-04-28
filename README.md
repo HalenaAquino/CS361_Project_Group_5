@@ -1,5 +1,18 @@
 # TODO
 
+Slide Presentation
+
+| TOPIC | ASSIGNED TO | STATUS |
+|------|------------|--------|
+| INTRODUCTION & OBJECTIVES | ------ | PENDING |
+| SYSTEM ARCHITECTURE & TECHNOLOGIES USED | ------ | PENDING |
+| LIVE SYSTEM DEMONSTRATION & SECURITY FEATURES | ------ | PENDING |
+| RISK MANAGEMENT & TESTING AND EVALUATION METRICS | ------ | PENDING |
+| CHALLENGES AND SOLUTIONS & FUTURE IMPROVEMENTS | ------ | PENDING |
+
+**Due 5/6 at 11:59pm**
+__________________________________________________________________________
+
 Week 10 (Final Report Submission, System Demonstration, and Presentation Preparation)
 
 | TASK | ASSIGNED TO | STATUS |
