@@ -1,6 +1,6 @@
 # TODO
 
-Slide Presentation
+Slides Presentation (https://docs.google.com/presentation/d/15QG5cBhwj5EBjaJ4nRrsVHERbaRR-EZoJeCQLbs7JZE/edit?usp=sharing)
 
 | TOPIC | ASSIGNED TO | STATUS |
 |------|------------|--------|
