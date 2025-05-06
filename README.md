@@ -7,8 +7,8 @@ Slides Presentation (https://docs.google.com/presentation/d/15QG5cBhwj5EBjaJ4nRr
 | INTRODUCTION & OBJECTIVES | Halena | PENDING |
 | SYSTEM ARCHITECTURE & TECHNOLOGIES USED | ------ | PENDING |
 | LIVE SYSTEM DEMONSTRATION & SECURITY FEATURES | ------ | PENDING |
-| RISK MANAGEMENT & TESTING AND EVALUATION METRICS | ------ | PENDING |
-| CHALLENGES AND SOLUTIONS & FUTURE IMPROVEMENTS | ------ | PENDING |
+| RISK MANAGEMENT & TESTING AND EVALUATION METRICS | Rohith | PENDING |
+| CHALLENGES AND SOLUTIONS & FUTURE IMPROVEMENTS | Juan | PENDING |
 
 **Due 5/6 at 11:59pm**
 __________________________________________________________________________
