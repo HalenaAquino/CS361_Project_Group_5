@@ -8,7 +8,7 @@ Slides Presentation (https://docs.google.com/presentation/d/15QG5cBhwj5EBjaJ4nRr
 | SYSTEM ARCHITECTURE & TECHNOLOGIES USED | Rasagyna | PENDING |
 | LIVE SYSTEM DEMONSTRATION & SECURITY FEATURES | Lahari | PENDING |
 | RISK MANAGEMENT & TESTING AND EVALUATION METRICS | Rohith | PENDING |
-| CHALLENGES AND SOLUTIONS & FUTURE IMPROVEMENTS | Juan | PENDING |
+| CHALLENGES AND SOLUTIONS & FUTURE IMPROVEMENTS | Juan | COMPLETED |
 
 **Due 5/6 at 11:59pm**
 __________________________________________________________________________
